@@ -1,0 +1,20 @@
+{
+    "name": "sunra/utils",
+    "description": "Misc utils",
+    "type": "library",
+    "keywords": ["html", "text", "conversion", "convertor", "markdows", "purifiing"],
+    "homepage": "https://github.com/sunra/Utils",
+    "authors": [
+        {
+            "name": "Sunra",
+            "email": "sunra@yandex.ru",
+            "homepage": "https://github.com/sunra"
+        }
+    ],
+    "require": {
+        "Sunra/HtmlToText": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Sunra\\Utils": "src/" }        
+    }
+}
