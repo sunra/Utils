@@ -1,6 +1,6 @@
 <?php
 
-    namespace Utils\Text;
+    namespace Sunra\Utils\Text;
 
     class Keywords
     {
