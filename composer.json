@@ -15,6 +15,6 @@
         "sunra/html_to_text": "dev-master"
     },
     "autoload": {
-        "psr-0": { "Sunra\\Utils": "src/" }        
+        "psr-0": { "Sunra\\Utils": "src/Utils" }        
     }
 }
