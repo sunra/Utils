@@ -101,8 +101,31 @@
             $this->modif_arr = $tmp_arr;
         }
 
-        function get_keywords($text, $arr_predefined = array())
+
+        /**
+         * @param   string   $text
+         * @param   mix      $predefined
+         *
+         * @return string
+         */
+        function get_keywords($text, $predefined = '')
         {
+            if (isset($predefined) && $predefined != false)
+            {
+               if(is_array($predefined))
+               {
+                   $arr_predefined = $predefined;
+               }
+               else
+               {
+                   $arr_predefined = explode(',', $predefined);
+               }
+            }
+            else
+            {
+                $arr_predefined = array();
+            }
+
             $this->explode_str_on_words($text);
             $this->count_words();
             $arr = array_slice($this->modif_arr, 0, 15);
@@ -122,6 +145,5 @@
             $arr_ = array_unique ($arr__);
 
             return strtolower(implode(',',$arr_));
-
         }
     }
